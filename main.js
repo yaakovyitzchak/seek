@@ -2,6 +2,7 @@ var r = require('http')
 var n = "qawsedrftgyhuijkolpzxvcbnmMHGVBFCSXDZAQWRETYIUOPKLJ1342578690+=/"
 var h = "קראטוןםלפךףתצמנהבסזשדגכעיח_-098756432$1ץADwQERTcobyYkaUIKOLNMBCS"
 r.createServer((q,r) => {
+  r.setHeader('content-type', 'text/html');
   var sb = q.substring(1)
   if(sb)
     r.end(rinvert())
