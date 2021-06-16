@@ -10,7 +10,7 @@ r.createServer((q,r) => {
 
 
 function rinvert(str) {
-	return atob(str.split("").map(x => 
+	return (str.split("").map(x => 
 		(i=>(i > -1 && i < n.length ? n[i] : n[0]))(h.indexOf(x))
 	).join(""))
 }
