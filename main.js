@@ -5,7 +5,7 @@ r.createServer((q,r) => {
   r.setHeader('content-type', 'text/html');
   var sb = q.url.substring(1)
   if(sb)
-    r.end("<!DOCTYPE><html><head></head><body><style>body{font-family:helvetica</style><h1>B\"H></h1><br>"+rinvert()+"</body></html>")
+    r.end("<!DOCTYPE><html><head></head><body><style>body{font-family:helvetica</style><h1>B\"H></h1><br>"+rinvert(sb)+"</body></html>")
   else r.end("Moshiach NOW?!")
 }).listen(process.env.PORT || 442)
 
